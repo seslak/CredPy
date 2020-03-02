@@ -86,4 +86,4 @@ class company:
         
         # Fulmer model
         if model == "fulmer":
-            return 5.528*(self.retainedear/self.ta)+0.212*(self.revenues/self.ta)+0.73*(self.ebit/self.equity)+1.27*(self.ebit+self.amortization-self.taxes+(self.))
+            return 5.528*(self.retainedear/self.ta)+0.212*(self.revenues/self.ta)+0.73*(self.ebit/self.equity)+1.27*(self.ebit+self.amortization-self.taxes+(self.cash+self.receivables+self.inventory+self.otherstassets-self.tso))/(self.tso+self.ltloans+self.otherltobl)-0.12*((self.tso+self.ltloans+self.otherltobl)/self.equity)+2.335*(self.tso/self.ta)
