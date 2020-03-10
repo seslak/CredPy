@@ -17,7 +17,6 @@ For the library to correctly calculate position from dataset firstly the
 dataset has to be assigned to the class:
 
 `import credpy as crp
-
 x = crp.company[DATASET]`
 
 where _ _DATASET_ _ is the dataset passed to the class with the financial positions
