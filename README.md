@@ -16,10 +16,10 @@ Or you can grab the source from GitHub and append it to your project:
 For the library to correctly calculate position from dataset firstly the
 dataset has to be assigned to the class:
 
-`import credpy as crp  
-x = crp.company[DATASET]`
+`import credpy as crp`
+`x = crp.company[DATASET]`
 
-where _ _DATASET_ _ is the dataset passed to the class with the financial positions
+where _DATASET_ is the dataset passed to the class with the financial positions
 of companies as follows: 
 
 Cash and Cash equivalents, Receivables, Inventory, Other short-term assets, Equipment,  Buildings and machinery, Land, Other long-term assets, Deffered Taxes, Loss above equity level, Payables, Shor-term loans, Long-term loans part maturing within a year, Other short-term obligations, Long-term loans, Other long-term obligations, Paid in capital, Retained earnings, Other capital, Total revenues, Costs of goods sold, General and administration costs, Total salaries, Amortization, Other operating expenses, Interest expanses, Other revenues, Other expenses, Taxes, Other P&L Changes
