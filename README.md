@@ -78,6 +78,7 @@ Additional positions are:
             Total short-term assets [tsta]
             Total assets [ta]
             Total short-term obligations [tso]
+            Total liabilites [tli]
             Equity [equity]
             
             Total costs [totalcosts]
@@ -87,15 +88,70 @@ Additional positions are:
             EBT [ebt]
             Net Income [netincome]
             
-
-
-- **ratios** - Retrieves designated ratio
+- **weights** - Weights function is used for calculating weights in dataset.
 
 `
-x.ratios['current']
+x.weights('inventory', 80000, 'equity', 'ta', 'cash')
+`
+Retrieves weights fot equity, total assets, and cash for the inventory to be over the 80.000.
+
+- **ratio** - Retrieves designated ratio
+
+`
+x.ratio['current']
 `
 
 Ratios are labeled as follows (in square brakets are the labels for function):
+
+            Current ratio [current]
+            Quick ratio [quick]
+            Cash ratio [cashr]
+            Net-working capital [nwr]
+            Cash to total assets ratio [cashta]
+            Sales to receivables (or turnover ratio) [salestor]
+            Days sales outstanding [dayssales] {'days' is optional variable which can be defined, default is 365}
+            Cost of sales [costsales]
+            Cash turnover [ctr]
+            
+            Debt to equity ratio [debtequ]
+            Debt ratio [debt]
+            Fixed-assets to net-worth [fatonw]
+            Interest coverage [ebitint]
+            Retained earnings ratio compared to equity [earnings]
+            Equity ratio  [equityr]
+            
+            Inventory turnover [invtr]
+            Inventory holding period [invhp]
+            Inventory to assets ratio [invta]
+            Accounts receivable turnover [acctr]
+            Accounts receivable collection period [acccp]
+            Days payable outstanding [dpo]
+     
+
+- **score** - Applies designated scoring model to the dataset
+
+`
+x.score['altman', 'revised']
+`
+
+Scoring models are labeled as follows (in square brakets are the labels for function):
+
+        Altman's z-score [altman]
+            Original (default model if not defined) [altman, original]
+            Updated [altman, updated]
+            Revised [altman, revised]
+            Taffler's and Tisshaw's  [altman, tntmodel]
+            Non-manufacturing [altman, non-man]
+            Emerging markets [emerging]
+        Bathory model [bathory]
+        Springate model [springate]
+        Zmijewski model [zmijewski]
+        Kralicek DF indicator [kralicek]
+        Grover model [grover]
+        Fulmer model [fulmer]
+
+
+
 
 ## Contributing
 1. Fork it!
@@ -106,6 +162,7 @@ Ratios are labeled as follows (in square brakets are the labels for function):
 
 ## History
 
+0.9.0 - First public release
 
 ## License
 Apache License, Version 2.0
