@@ -24,19 +24,24 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="credpy", # Re
-    version="0.9.0",
+    name="credpy",
+    version="0.9.1",
     author="Sinisa Seslak",
     author_email="seslaks@gmail.com",
-    description="Credit risk library for python",
+    description="Credit risk library for Python",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/seslak/CredPy",
+    license='Apache 2.0',
+    url="https://pypi.org/project/credpy/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: Apache Software License",
-        "Operating System :: OS Independent",
+        "Operating System :: OS Independent"
     ],
+    install_requires=[
+          'pandas',
+          'scikit-learn'
+      ],
     python_requires='>=3.6',
 )

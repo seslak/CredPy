@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-       Copyright [2020] [Sinisa Seslak (seslaks@gmail.com)
+       Copyright [2020] [Sinisa Seslak (seslaks@gmail.com)]
     
        Licensed under the Apache License, Version 2.0 (the "License");
        you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ def error(errortype):
         warnings.warn("ATTENTION! After usage of this ratio company set has to be redefined! It will be fixed in coming version.", DeprecationWarning) # FIXED!
     
     if errortype == "scoringwarn":
-        warnings.warn("Please have in mind this is undder development library. Double check the results!", Warning)
+        warnings.warn("Please have in mind this is under development library. Double check the results!", Warning)
             
     if errortype == "fatonw":
         warnings.warn("For the ratio Fixed assets to Net worth the calculation of intangible assets has been done with Other long-term assets", Warning)

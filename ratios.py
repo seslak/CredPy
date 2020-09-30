@@ -21,7 +21,7 @@
 """
 
 # Ratios
-def getratio(dataset, ratio, days=365):
+def getratio(dataset, ratio, c, days=365):
 
     """
     These are liquidity ratios. 

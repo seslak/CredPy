@@ -1,0 +1,7 @@
+README.md
+setup.py
+credpy.egg-info/PKG-INFO
+credpy.egg-info/SOURCES.txt
+credpy.egg-info/dependency_links.txt
+credpy.egg-info/requires.txt
+credpy.egg-info/top_level.txt
